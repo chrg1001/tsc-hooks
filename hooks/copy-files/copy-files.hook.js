@@ -53,7 +53,7 @@ module.exports = {
       }
       const outFile = outDir ? `${outDir}/${file}` : file;
       if (
-        !file.endsWith("js") ||
+        !file.endsWith("js") &&
         !(
           (file.endsWith("ts") || file.endsWith("tsx")) &&
           !api.tsconfig?.compilerOptions?.allowTs
